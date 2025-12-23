@@ -48,17 +48,17 @@ const siteData = {
     // { image: 'images/اسم_الصورة.jpg', title: 'اسم الخدمة' },
     // ==========================================
     services: [
-        { image: 'images/image5.jpg', title: 'تجميل الأسنان' },
-        { image: 'images/image6.jpg', title: 'زراعة الأسنان' },
-        { image: 'images/image7.jpg', title: 'طب الأسنان بالليزر' },
+        { image: 'images/image5.jpg', title: 'علاج اللثة' },
+        { image: 'images/image6.jpg', title: 'تقويم الاسنان' },
+        { image: 'images/image7.jpg', title: 'فحص شامل' },
         { image: 'images/image8.jpg', title: 'الطب الرقمي (CAD/CAM)' },
-        { image: 'images/image9.jpg', title: 'تقويم الأسنان' },
-        { image: 'images/image10.jpg', title: 'علاج العصب' },
-        { image: 'images/image11.png', title: 'تركيبات وعدسات' },
-        { image: 'images/image12.jpg', title: 'علاج اللثة' },
-        { image: 'images/image13.jpg', title: 'طب أسنان الأطفال' },
+        { image: 'images/image9.jpg', title: 'علاج العصب' },
+        { image: 'images/image10.jpg', title: 'طب اسنان الاطفال' },
+        { image: 'images/image11.png', title: 'تصوير الاسنان' },
+        { image: 'images/image12.jpg', title: 'تجميل الاسنان' },
+        { image: 'images/image13.jpg', title: 'حشوات طبية' },
         { image: 'images/image14.jpg', title: 'طب الأسنان العام' },
-        { image: 'images/image15.jpg', title: 'تصوير الأسنان' }
+        { image: 'images/image15.jpg', title: 'تبييض الاسنان' }
     ],
 
     // ==========================================
