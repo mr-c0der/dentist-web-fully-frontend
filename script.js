@@ -189,7 +189,6 @@ function initBookingForm() {
         // Get form values
         const name = document.getElementById('booking-name').value.trim();
         const email = document.getElementById('booking-email').value.trim();
-        const phone = document.getElementById('booking-phone').value.trim();
         const date = document.getElementById('booking-date').value;
         const time = document.getElementById('booking-time').value;
         const notes = document.getElementById('booking-notes').value.trim();
@@ -199,7 +198,7 @@ function initBookingForm() {
         const services = Array.from(serviceCheckboxes).map(cb => cb.value);
 
         // Validation
-        if (!name || !email || !phone || !date || !time) {
+        if (!name || !email || !date || !time) {
             errorDiv.textContent = 'الرجاء ملء جميع الحقول الإلزامية';
             errorDiv.style.display = 'block';
             return;
@@ -232,7 +231,6 @@ function initBookingForm() {
 
 👤 *الاسم:* ${name}
 📧 *البريد:* ${email}
-📞 *الهاتف:* ${phone}
 
 🏥 *الخدمات المطلوبة:*
 ${services.map(s => `   • ${s}`).join('\n')}
