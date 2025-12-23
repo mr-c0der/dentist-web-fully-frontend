@@ -110,9 +110,9 @@ body {
   padding: 0 9%;
   overflow: hidden; /* Chrome fix */
 
-  /* Request: Hero background is hero1.jpg */
+  /* Request: Hero background is hero2.jpg */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/hero1.jpg");
+    url("images/hero2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
