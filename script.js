@@ -259,14 +259,25 @@ ${notes ? `📝 *ملاحظات:* ${notes}` : ''}
 // Obfuscated phone number retrieval
 function getDoctorPhone() {
     // Phone parts encoded in Base64 for basic obfuscation
+    // Format: 201282770255 (without leading 00)
     const p = [
-        atob('MDAy'),      // 002
-        atob('MDE='),      // 01
+        atob('MjAx'),      // 201
         atob('Mjgy'),      // 282
         atob('Nzcw'),      // 770
         atob('MjU1')       // 255
     ];
     return p.join('');
+}
+
+// Set WhatsApp icon links to doctor's number
+function initWhatsAppLinks() {
+    const whatsappIcons = document.querySelectorAll('a.social-icon.whatsapp, .footer-social a[title="واتساب"]');
+    const doctorPhone = getDoctorPhone();
+    
+    whatsappIcons.forEach(icon => {
+        icon.href = `https://wa.me/${doctorPhone}`;
+        icon.target = '_blank';
+    });
 }
 
 // Initialize booking form on page load
@@ -276,4 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
     try { initScrollAnimations(); } catch (e) { console.error('Animation Error:', e); }
     try { initCounterAnimation(); } catch (e) { console.error('Counter Error:', e); }
     try { initBookingForm(); } catch (e) { console.error('Booking Error:', e); }
+    try { initWhatsAppLinks(); } catch (e) { console.error('WhatsApp Links Error:', e); }
 });
+
