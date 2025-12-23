@@ -736,6 +736,7 @@ body {
   gap: 2rem;
   max-width: 120rem;
   margin: 0 auto;
+  overflow: hidden; /* Chrome fix for reveal animations */
 }
 
 .contact-layout .top-row {
@@ -746,6 +747,7 @@ body {
   ); /* Responsive Grid */
   gap: 2rem;
   align-items: stretch;
+  overflow: hidden; /* Chrome fix for reveal animations */
 }
 
 /* Map takes full height of grid cell */
